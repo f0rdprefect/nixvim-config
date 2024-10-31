@@ -18,14 +18,14 @@ Because who doesn't like a declarative configuration of Neovim?
 To run the configuration, you can type the following:
 
 ```bash
-nix run github:mikaelfangel/nixvim-config
+nix run github:f0rdprefect/nixvim-config
 ```
 
 ## How to include as package
 
 To include the configuration as a replacement for Neovim, you first need to add it as an input on your system
 ```
-inputs.nixvim.url = "github:mikaelfangel/nixvim-config"
+inputs.nixvim.url = "github:f0rdprefect/nixvim-config"
 ```
 
 Then you can input this in your configuration.nix (be sure that you inherit inputs from your flake)
