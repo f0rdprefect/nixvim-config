@@ -1,3 +1,4 @@
+{lib, ...}:
 {
   imports = [
     ./bufferline.nix
@@ -23,7 +24,7 @@
     ./utils/wilder.nix
   ];
 
-  colorschemes.dracula.enable = true;
+  #  colorschemes.dracula.enable = lib.mkDefault true;
   plugins.web-devicons.enable = true;
 
   diagnostics = { virtual_lines.only_current_line = true; };
