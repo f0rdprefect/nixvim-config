@@ -4,9 +4,12 @@
   inputs = {
     nixvim.url = "github:nix-community/nixvim";
     flake-utils.url = "github:numtide/flake-utils";
+    stylix = {
+      url = "github:danth/stylix";
+    };
   };
 
-  outputs = { self, nixpkgs, nixvim, flake-utils, ... }@inputs:
+  outputs = { self, nixpkgs, nixvim, flake-utils, stylix, ... }@inputs:
     let config = import ./config; # import the module directly
     in flake-utils.lib.eachDefaultSystem (system:
       let

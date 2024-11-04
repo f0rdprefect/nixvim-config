@@ -1,4 +1,4 @@
-{lib, ...}:
+{lib,  ...}:
 {
   imports = [
     ./bufferline.nix
@@ -11,6 +11,7 @@
     ./lsp/ionide.nix
     ./lsp/none-ls.nix
     ./lsp/trouble.nix
+    ./neorg.nix
     ./nvim-tree.nix
     ./options.nix
     ./treesitter.nix
@@ -23,7 +24,6 @@
     ./utils/which-key.nix
     ./utils/wilder.nix
   ];
-
   colorschemes.dracula.enable = lib.mkDefault true;
   plugins.web-devicons.enable = true;
 
@@ -100,7 +100,7 @@
       options.desc = "Format the current buffer";
     }
 
-    # Git    
+    # Git
     {
       mode = "n";
       key = "<leader>g";
@@ -192,7 +192,7 @@
       options.desc = "Escape terminal mode";
     }
 
-    # Trouble 
+    # Trouble
     {
       mode = "n";
       key = "<leader>d";
