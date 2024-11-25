@@ -26,6 +26,7 @@
   ];
   colorschemes.dracula.enable = lib.mkDefault true;
   plugins.web-devicons.enable = true;
+  plugins.lastplace.enable = true;
 
   diagnostics = { virtual_lines.only_current_line = true; };
 
