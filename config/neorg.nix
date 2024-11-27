@@ -33,11 +33,11 @@
         '';
 
         "core.dirman".config.workspaces = {
-          notes = "~/notes";
-          nix = "~/perso/nix/notes";
+          work = "~/work/notes";
         };
 
         "core.concealer".__empty = null;
+        "core.integrations.nvim-cmp".__empty = null;
         "core.completion".config.engine = "nvim-cmp";
         "core.qol.toc".config.close_after_use = true;
       };

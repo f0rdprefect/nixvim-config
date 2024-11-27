@@ -50,6 +50,7 @@
           { name = "nvim_lua"; }
           { name = "path"; }
           { name = "copilot"; }
+          { name = "neorg"; }
         ];
 
         formatting = {
@@ -134,7 +135,7 @@
           "<C-Space>" = "cmp.mapping.complete()";
           "<S-Tab>" = "cmp.mapping.close()";
           "<Tab>" =
-            # lua 
+            # lua
             ''
               function(fallback)
                 local line = vim.api.nvim_get_current_line()
