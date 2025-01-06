@@ -10,7 +10,6 @@
         ruff.enable = true;
         pylsp = {
           enable = true;
-          ruff.enabled = true;
         };
         rust_analyser = {
           enable = true;
