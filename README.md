@@ -66,5 +66,6 @@ Descriptions of all the config files/plugins used in this configuration.
 
 If there is something that you feel that is not quite right, or you have ideas for improvement, please submit an issue or a PR.
 
+
 ## Acknowledgements
  * [NixVim](https://github.com/nix-community/nixvim)
