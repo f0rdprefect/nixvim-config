@@ -11,7 +11,7 @@
         pylsp = {
           enable = true;
         };
-        rust-analyser = {
+        rust-analyzer = {
           enable = true;
 
         };
