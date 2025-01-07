@@ -11,7 +11,7 @@
         pylsp = {
           enable = true;
         };
-        omisharp.enable = true;
+        omnisharp.enable = true;
         rust-analyzer = {
           enable = true;
           installCargo = true;
