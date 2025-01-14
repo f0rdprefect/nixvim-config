@@ -29,7 +29,7 @@
   plugins.lastplace.enable = true;
 performance = {
       combinePlugins = {
-        enable = true;
+        enable = false;
         standalonePlugins = [
           "hmts.nvim"
           "neorg"
