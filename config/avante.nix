@@ -20,5 +20,8 @@
         };
       };
     };
+    dressing.enable = true;
+    #plenary.enable = true;
+    nui.enable = true;
   };
 }
