@@ -4,6 +4,7 @@
     luasnip.enable = true;
     copilot-lua = {
       enable = true;
+      settings = {
       suggestion.enabled = false;
       panel.enabled = false;
       filetypes = {
@@ -17,6 +18,7 @@
         svn = false;
         cvs = false;
         "." = false;
+        };
       };
     };
 
