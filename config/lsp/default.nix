@@ -5,6 +5,7 @@
     lsp = {
       enable = true;
       servers = {
+        marksman.enable = true;
         bashls.enable = true;
         nixd.enable = true;
         ruff.enable = true;
