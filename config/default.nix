@@ -1,4 +1,4 @@
-{lib,  ...}:
+{ lib, ... }:
 {
   imports = [
     ./avante.nix
@@ -27,19 +27,28 @@
   colorschemes.dracula.enable = lib.mkDefault true;
   plugins.web-devicons.enable = true;
   plugins.lastplace.enable = true;
-performance = {
-      combinePlugins = {
-        enable = false;
-        standalonePlugins = [
-          "hmts.nvim"
-          "neorg"
-          "nvim-treesitter"
-          "bufferline.nvim"
-        ];
-      };
-      byteCompileLua.enable = true;
+  plugins.image = {
+    enable = true;
+    integrations.neorg.enabled = true;
+    integrations.marksman.enabled = true;
+    backend = "kitty";
+
+  };
+  performance = {
+    combinePlugins = {
+      enable = false;
+      standalonePlugins = [
+        "hmts.nvim"
+        "neorg"
+        "nvim-treesitter"
+        "bufferline.nvim"
+      ];
     };
-  diagnostics = { virtual_lines.only_current_line = true; };
+    byteCompileLua.enable = true;
+  };
+  diagnostics = {
+    virtual_lines.only_current_line = true;
+  };
 
   extraConfigVim = ''
     autocmd BufRead,BufNewFile *.pl set filetype=prolog
