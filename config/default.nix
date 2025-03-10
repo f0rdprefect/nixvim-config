@@ -30,7 +30,7 @@
   plugins.image = {
     enable = true;
     integrations.neorg.enabled = true;
-    integrations.marksman.enabled = true;
+    integrations.markdown.enabled = true;
     backend = "kitty";
 
   };
